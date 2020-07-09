@@ -1,6 +1,8 @@
 package com.gpm.springcloud.base;
 
 import static com.gpm.springcloud.status.LoginStatus.*;
+import static com.gpm.springcloud.status.OperationStatus.FAILED;
+import static com.gpm.springcloud.status.OperationStatus.SUCCESS;
 
 
 /**
@@ -103,6 +105,30 @@ public class BaseController {
         resultData.setCode(LOGIN_FAILED.getCode());
         resultData.setMsg(LOGIN_FAILED.getMsg());
         resultData.setDetail(detail);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 操作成功 返回系统消息
+     * @Date 2020/7/9 18:59
+     **/
+    protected ResultData operationSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SUCCESS.getCode());
+        resultData.setMsg(SUCCESS.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 操作失败 返回系统消息
+     * @Date 2020/7/9 19:00
+     **/
+    protected ResultData operationFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(FAILED.getCode());
+        resultData.setMsg(FAILED.getMsg());
         return resultData;
     }
 }
