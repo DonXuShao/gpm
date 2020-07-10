@@ -110,6 +110,19 @@ public class BaseController {
 
     /**
      * @Author Don
+     * @Description 操作成功，返回系统消息
+     * @Date 2020/7/10 17:02
+     **/
+    protected ResultData operationSuccess(Object data) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SUCCESS.getCode());
+        resultData.setMsg(SUCCESS.getMsg());
+        resultData.setData(data);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
      * @Description 操作成功 返回系统消息
      * @Date 2020/7/9 18:59
      **/
@@ -129,6 +142,19 @@ public class BaseController {
         ResultData resultData = new ResultData();
         resultData.setCode(FAILED.getCode());
         resultData.setMsg(FAILED.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 操作失败，返回系统消息
+     * @Description 操作失败，返回系统消息
+     * @Date 2020/7/10 17:03
+     **/
+    protected ResultData operationFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(FAILED.getCode());
+        resultData.setMsg(msg);
         return resultData;
     }
 }
