@@ -12,6 +12,7 @@ public enum LoginStatus {
     USER_EXIST("201", "用户已经存在"),
     USER_NOT_EXIST("401", "用户不存在"),
     PASSWORD_WRONG("402", "密码错误"),
+    LOGIN_TIMEOUT_EXIT("10006","超时自动退出，请重新登录"),
     LOGOUT_WRONG("405", "用户退出异常");
 
     LoginStatus(String code, String msg) {

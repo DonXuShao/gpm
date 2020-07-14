@@ -19,10 +19,10 @@ import static com.gpm.springcloud.staticproperties.TimeFormatProperties.DATE_FOR
  * @Discription:文件上传
  * @Version 1.0
  **/
-@Service
+//@Service
 public class UploadService {
 
-    @Autowired
+//    @Autowired
     private FtpProperties ftpProperties;
 
     /**

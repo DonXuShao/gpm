@@ -1,0 +1,22 @@
+package com.gpm.springcloud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+/**
+ * @Author Don
+ * @Date: 2020/7/13 14:42
+ * @Discription:Consumer8081启动类
+ * @Version 1.0
+ **/
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@EnableDiscoveryClient
+@EnableFeignClients
+public class ApplicationConsumer8081 {
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationConsumer8081.class,args);
+    }
+}

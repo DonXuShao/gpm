@@ -16,7 +16,7 @@ import java.util.Set;
  * @Discription:获取RedisCluster链接配置
  * @Version 1.0
  **/
-@Configuration
+//@Configuration
 public class RedisClusterConfig {
 
     @Autowired
@@ -27,7 +27,7 @@ public class RedisClusterConfig {
      * @Description  获取链接与节点 用于连接Redis服务器
      * @Date 2020/7/10 16:04
      **/
-    @Bean
+//    @Bean
     public JedisCluster getJedisCluster() {
         String nodes = redisClusterProperties.getNodes();
         String[] split = nodes.split(",");

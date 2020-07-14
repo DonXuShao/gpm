@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
  * @ConfigurationProperties:默认只会从application.properties中去读取属性
  * @Version 1.0
  **/
-@Component
-@PropertySource("classpath:properties/redis_cluster.properties")
-@ConfigurationProperties(prefix = "spring.redis")
+//@Component
+//@PropertySource("classpath:properties/redis_cluster.properties")
+//@ConfigurationProperties(prefix = "spring.redis")
 @Data
 public class RedisClusterProperties {
     private String nodes;

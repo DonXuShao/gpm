@@ -1,8 +1,15 @@
 package com.gpm.springcloud.base;
 
+import static com.gpm.springcloud.status.AddStatus.ADD_DATA_EXIST;
+import static com.gpm.springcloud.status.AddStatus.ADD_DATA_FAILED;
+import static com.gpm.springcloud.status.DeleteStatus.*;
+import static com.gpm.springcloud.status.FileStatus.UPLOAD_FAILED;
+import static com.gpm.springcloud.status.FileStatus.UPLOAD_SUCCESS;
 import static com.gpm.springcloud.status.LoginStatus.*;
 import static com.gpm.springcloud.status.OperationStatus.FAILED;
 import static com.gpm.springcloud.status.OperationStatus.SUCCESS;
+import static com.gpm.springcloud.status.SelectStatus.*;
+import static com.gpm.springcloud.status.UpdateStatus.*;
 
 
 /**
@@ -63,7 +70,7 @@ public class BaseController {
     /**
      * @return
      * @Author Don
-     * @Description 返回数据信息
+     * @Description 登录成功返回数据信息
      * 使用自定义消息
      * @Date 2020/7/8 15:08
      * @Param
@@ -73,6 +80,31 @@ public class BaseController {
         resultData.setCode(LOGIN_SUCCESS.getCode());
         resultData.setMsg(msg);
         resultData.setData(data);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 超时退出
+     * @Date 2020/7/14 10:20
+     **/
+    protected ResultData loginTimeoutExit() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_TIMEOUT_EXIT.getCode());
+        resultData.setMsg(LOGIN_TIMEOUT_EXIT.getMsg());
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 超时退出，自定义消息
+     * @Date 2020/7/14 10:20
+     **/
+    protected ResultData loginTimeoutExit(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_TIMEOUT_EXIT.getCode());
+        resultData.setMsg(msg);
         return resultData;
     }
 
@@ -148,7 +180,6 @@ public class BaseController {
     /**
      * @Author Don
      * @Description 操作失败，返回系统消息
-     * @Description 操作失败，返回系统消息
      * @Date 2020/7/10 17:03
      **/
     protected ResultData operationFailed(String msg) {
@@ -157,4 +188,354 @@ public class BaseController {
         resultData.setMsg(msg);
         return resultData;
     }
+
+    /**
+     * @Author Don
+     * @Description 添加数据失败，返回自定义消息
+     * @Date 2020/7/14 10:21
+     **/
+    protected ResultData addFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(ADD_DATA_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 添加的数据已经存在，添加失败，返回系统消息
+     * @Date 2020/7/14 10:21
+     **/
+    protected ResultData addDataEexist() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(ADD_DATA_EXIST.getCode());
+        resultData.setMsg(ADD_DATA_EXIST.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 添加的数据已经存在，添加失败，返回自定义消息
+     * @Date 2020/7/14 10:21
+     **/
+    protected ResultData addDataEexist(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(ADD_DATA_EXIST.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 要修改的数据已存在
+     * @Date 2020/7/14 10:17
+     **/
+    protected ResultData updateDataExist() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_DATA_EXIST.getCode());
+        resultData.setMsg(UPDATE_DATA_EXIST.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 查询数据成功
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectSuccess(Object obj) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_SUCCESS.getCode());
+        resultData.setMsg(SELECT_DATA_SUCCESS.getMsg());
+        resultData.setData(obj);
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 查询数据成功，返回自定义消息
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectSuccess(Object obj, String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        resultData.setData(obj);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 查询数据失败
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_FAILED.getCode());
+        resultData.setMsg(SELECT_DATA_FAILED.getMsg());
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 查询数据失败，返回自定义消息
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 查询的数据不存在
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectDataNotExist() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_NOT_EXIST.getCode());
+        resultData.setMsg(SELECT_DATA_NOT_EXIST.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 查询的数据不存在，返回自定义消息
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectDataNotExist(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_NOT_EXIST.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 根据ID查询数据成功
+     * @Date 2020/7/14 10:15
+     **/
+    protected ResultData selectByIdSuccess(Object obj) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_BY_ID_SUCCESS.getCode());
+        resultData.setMsg(SELECT_DATA_BY_ID_SUCCESS.getMsg());
+        resultData.setData(obj);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 根据ID查询数据成功，返回自定义消息
+     * @Date 2020/7/14 10:12
+     **/
+    protected ResultData selectByIdSuccess(String msg, Object obj) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_BY_ID_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        resultData.setData(obj);
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 根据ID查询数据失败
+     * @Date 2020/7/14 10:13
+     **/
+    protected ResultData selectByIdFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_BY_ID_FAILED.getCode());
+        resultData.setMsg(SELECT_DATA_BY_ID_FAILED.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 根据ID查询数据失败，返回自定义消息
+     * @Date 2020/7/14 10:14
+     **/
+    protected ResultData selectByIdFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SELECT_DATA_BY_ID_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 上传成功
+     * @Date 2020/7/14 10:19
+     **/
+    protected ResultData uploadSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPLOAD_SUCCESS.getCode());
+        resultData.setMsg(UPLOAD_SUCCESS.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 上传成功，自定义返回值
+     * @Date 2020/7/14 10:19
+     **/
+    protected ResultData uploadSuccess(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPLOAD_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 上传失败
+     * @Date 2020/7/14 10:19
+     **/
+    protected ResultData uploadFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPLOAD_FAILED.getCode());
+        resultData.setMsg(UPLOAD_FAILED.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 上传失败，自定义返回值
+     * @Date 2020/7/14 10:19
+     **/
+    protected ResultData uploadFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPLOAD_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 删除数据成功，返回系统消息
+     * @Date 2020/7/14 10:23
+     **/
+    protected ResultData deleteSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_SUCCESS.getCode());
+        resultData.setMsg(DELETE_DATA_SUCCESS.getMsg());
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 删除数据成功，返回自定义消息
+     * @Date 2020/7/14 10:23
+     **/
+    protected ResultData deleteSuccess(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 删除数据失败
+     * @Date 2020/7/14 10:23
+     **/
+    protected ResultData deleteFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_FAILED.getCode());
+        resultData.setMsg(DELETE_DATA_FAILED.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 删除数据失败，返回自定义数据
+     * @Date 2020/7/14 10:23
+     **/
+    protected ResultData deleteFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 删除的数据不存在，删除失败
+     * @Date 2020/7/14 10:23
+     **/
+    protected ResultData deleteDataNotExist() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_NOT_EXIST.getCode());
+        resultData.setMsg(DELETE_DATA_NOT_EXIST.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 出现未知错误，请稍后再试！
+     * @Date 2020/7/14 10:22
+     **/
+    protected ResultData deleteDataError() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_DATA_ERROR.getCode());
+        resultData.setMsg(DELETE_DATA_ERROR.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 修改数据成功
+     * @Date 2020/7/14 10:25
+     **/
+    protected ResultData updateSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_DATA_SUCCESS.getCode());
+        resultData.setMsg(UPDATE_DATA_SUCCESS.getMsg());
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 修改数据成功，返回自定义消息
+     * @Date 2020/7/14 10:25
+     **/
+    protected ResultData updateSuccess(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_DATA_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    /**
+     * @Author Don
+     * @Description 修改数据失败
+     * @Date 2020/7/14 10:25
+     **/
+    protected ResultData updateFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_DATA_FAILED.getCode());
+        resultData.setMsg(UPDATE_DATA_FAILED.getMsg());
+        return resultData;
+    }
+
+
+    /**
+     * @Author Don
+     * @Description 修改数据失败，返回自定义消息
+     * @Date 2020/7/14 10:24
+     **/
+    protected ResultData updateFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_DATA_FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+
 }

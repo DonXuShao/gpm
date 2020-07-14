@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
  * @Discription:FTP服务器配置实体类
  * @Version 1.0
  **/
-@Component
-@PropertySource("classpath:properties/ftp.properties")
-@ConfigurationProperties(prefix = "spring.ftp")
+//@Component
+//@PropertySource("classpath:properties/ftp.properties")
+//@ConfigurationProperties(prefix = "spring.ftp")
 @Data
 public class FtpProperties {
     private String host;
