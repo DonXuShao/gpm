@@ -1,6 +1,7 @@
 package com.gpm.springcloud.controller;
 
 import com.gpm.springcloud.base.ResultData;
+
 import com.gpm.springcloud.service.SpringCloudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -12,8 +12,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Discription:Consumer启动类
  * @Version 1.0
  **/
-@SpringBootApplication
-//@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
+//@SpringBootApplication
+@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 @EnableDiscoveryClient
 @EnableFeignClients
 public class ApplicationConsumer8081 {
