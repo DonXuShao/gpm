@@ -9,9 +9,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * @Description: 字典实体
- * @Author: mi
- * @Date: 2020/5/23 23:53
+ * @Author Don
+ * @Description  字典实体
+ * @Date 2020/7/14 20:38
  **/
 @Table(name = "t_dict")
 @AllArgsConstructor

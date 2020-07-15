@@ -1,5 +1,6 @@
 package com.gpm.springcloud.model;
 
+import com.gpm.springcloud.base.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,15 +10,16 @@ import javax.persistence.*;
 
 /**
  * @Author Don
- * @Description  仪器设备实体类
- * @Date 2020/7/14 20:38
+ * @Date: 2020/7/14 22:03
+ * @Discription:特殊岗位人员实体类
+ *  @Version 1.0
  **/
-@Table(name = "t_equipment")
-@NoArgsConstructor
+@Table(name = "t_audit")
 @AllArgsConstructor
-@Data
+@NoArgsConstructor
 @Accessors(chain = true)
-public class Equipment {
+@Data
+public class SpecialPost extends BaseModel {
     /**
      * 编号
      */
@@ -26,60 +28,58 @@ public class Equipment {
     private Long id;
 
     /**
-     * 仪器设备名称
+     * 姓名
      */
     private String name;
 
     /**
-     * 品牌型号
+     * 有效证件号
      */
-    private String brand;
+    @Column(name = "id_number")
+    private String idNumber;
 
     /**
-     * 出厂编号
+     * 性别 0:女 1:男 2:保密
      */
-    @Column(name = "production_id")
-    private String productionId;
+    private Integer sex;
 
     /**
-     * 数量
+     * 年龄
      */
-    private Integer number;
+    private Integer age;
 
     /**
-     * 检定日期
+     * 工作年限
      */
-    @Column(name = "check_date")
-    private String checkDate;
+    @Column(name = "work_year")
+    private Integer workYear;
 
     /**
-     * 检定有效日期
+     * 毕业院校
      */
-    @Column(name = "effective_date")
-    private String effectiveDate;
+    private String school;
 
     /**
-     * 发票代码
+     * 所学专业
      */
-    @Column(name = "invoice_code")
-    private String invoiceCode;
+    private String major;
 
     /**
-     * 检定机构
+     * 学历
      */
-    @Column(name = "check_department")
-    private String checkDepartment;
+    @Column(name = "education_background")
+    private String educationBackground;
 
     /**
-     * 检定证书号
+     * 学位
      */
-    @Column(name = "check_certificate_id")
-    private String checkCertificateId;
+    private String degree;
 
     /**
-     * 认定
+     * 特殊岗位
      */
-    private String identified;
+    @Column(name = "special_post")
+    private String specialPost;
 
     /**
      * 单位用户编号
@@ -89,7 +89,6 @@ public class Equipment {
 
     /**
      * 创建时间
-
      */
     @Column(name = "create_time")
     private String createTime;
@@ -99,5 +98,4 @@ public class Equipment {
      */
     @Column(name = "modify_time")
     private String modifyTime;
-
-  }
+}

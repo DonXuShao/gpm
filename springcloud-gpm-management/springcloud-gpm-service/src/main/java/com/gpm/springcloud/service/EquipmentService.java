@@ -3,8 +3,10 @@ package com.gpm.springcloud.service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.gpm.springcloud.base.BaseService;
-import com.gpm.springcloud.mapper.UnitMapper;
+import com.gpm.springcloud.mapper.EquipmentMapper;
+import com.gpm.springcloud.model.Equipment;
 import com.gpm.springcloud.model.MappingUnit;
+import com.gpm.springcloud.model.Principal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,61 +19,32 @@ import static com.gpm.springcloud.status.SelectStatus.SELECT_DATA_SUCCESS;
 
 /**
  * @Author Don
- * @Date: 2020/7/13 11:19
- * @Discription:
+ * @Date: 2020/7/14 21:52
+ * @Discription:仪器设备操作Service
  * @Version 1.0
  **/
 @Service
-public class UnitService extends BaseService<MappingUnit> {
+public class EquipmentService extends BaseService<Equipment> {
 
     @Autowired
-    private UnitMapper unitMapper;
-
-    /**
-     * @return
-     * @Author Don
-     * @Description 查询所有单位信息
-     * @Date 2020/7/13 19:55
-     */
-    public List<MappingUnit> selectAll() {
-        return super.selectList(null);
-    }
+    private EquipmentMapper equipmentMapper;
 
     /**
      * @Author Don
-     * @Description 条件查询单位
-     * @Date 2020/7/14 9:56
+     * @Description 仪器设备列表
+     * @Date 2020/7/14 21:54
      **/
-    public Map<String, Object> selectUnit(Map map) {
+    public Map<String, Object> selectEquipment(Map map) {
         HashMap<String, Object> resultMap = new HashMap<>();
-        List<HashMap> resultdata;
 
         MappingUnit tMappingUnit = new MappingUnit();
         if (null != map.get("id")) {
             tMappingUnit.setId(Long.parseLong(map.get("id") + ""));
         }
-        if (null != map.get("auditStatus")) {
-            tMappingUnit.setAuditStatus(Integer.valueOf(map.get("auditStatus") + ""));
-        }
-        if (null != map.get("qualificationLevel")) {
-            tMappingUnit.setQualificationLevel(map.get("qualificationLevel") + "");
-        }
-        if (null != map.get("ownedDistrict")) {
-            tMappingUnit.setOwnedDistrict(map.get("ownedDistrict") + "");
-        }
-        if (null != map.get("unit_name")) {
-            tMappingUnit.setUnitName(map.get("unit_name") + "");
-        }
 
-
-        if (null == tMappingUnit) {
-            resultdata = unitMapper.selectAllUnit();
-        } else {
-            resultdata = unitMapper.selectUnit(tMappingUnit);
-        }
+        List<HashMap> resultdata = equipmentMapper.selectEquipment(tMappingUnit);
         PageHelper.startPage(Integer.parseInt(map.get("currentPage") + ""), Integer.parseInt(map.get("pageSize") + ""));
         PageInfo pageInfo = new PageInfo(resultdata);
-
         if (resultdata != null && resultdata.size() > 0) {
             resultMap.put("code", SELECT_DATA_SUCCESS.getCode());
             resultMap.put("msg", SELECT_DATA_SUCCESS.getMsg());
@@ -83,6 +56,29 @@ public class UnitService extends BaseService<MappingUnit> {
         return resultMap;
     }
 
+    /**
+     * @Author Don
+     * @Description 查看仪器设备详细信息
+     * @Date 2020/7/14 22:14
+     **/
+    public Map<String, Object> selectEquipmentDetail(Map map) {
+        HashMap<String, Object> resultMap = new HashMap<>();
 
+        Equipment equipment = new Equipment();
+        if (null != map.get("id")) {
+            equipment.setId(Long.parseLong(map.get("id") + ""));
+        }
 
+        List<HashMap> resultdata = equipmentMapper.selectEquipmentDetail(equipment);
+
+        if (resultdata != null && resultdata.size() > 0) {
+            resultMap.put("code", SELECT_DATA_SUCCESS.getCode());
+            resultMap.put("msg", SELECT_DATA_SUCCESS.getMsg());
+            resultMap.put("data", resultdata);
+        } else {
+            resultMap.put("code", SELECT_DATA_FAILED.getCode());
+            resultMap.put("msg", SELECT_DATA_FAILED.getMsg());
+        }
+        return resultMap;
+    }
 }

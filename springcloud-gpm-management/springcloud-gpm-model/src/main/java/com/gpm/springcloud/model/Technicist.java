@@ -11,8 +11,10 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 /**
- * 技术人员信息
- */
+ * @Author Don
+ * @Description  技术人员信息
+ * @Date 2020/7/14 20:39
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

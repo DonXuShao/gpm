@@ -10,10 +10,10 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 /**
- * @Author guohang
+ * @Author Don
  * @Description User实体
- * @Date 2020/5/20 21:36
- */
+ * @Date 2020/7/14 20:38
+ **/
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
@@ -78,7 +78,7 @@ public class User extends BaseModel {
     private String type;
 
     /**
-     *  无状态token值
+     * 无状态token值
      */
     private String token;
 

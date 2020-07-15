@@ -10,10 +10,10 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @Author guohang
- * @Description 菜单实体
- * @Date 2020/6/3 18:29
- */
+ * @Author Don
+ * @Description  菜单实体
+ * @Date 2020/7/14 20:39
+ **/
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

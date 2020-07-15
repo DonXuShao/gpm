@@ -10,10 +10,10 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 /**
-* @Description:测绘单位实体类
-* @Author: Qin
-* @Date: 2020/5/22
-*/
+ * @Author Don
+ * @Description  测绘单位实体类
+ * @Date 2020/7/14 20:39
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

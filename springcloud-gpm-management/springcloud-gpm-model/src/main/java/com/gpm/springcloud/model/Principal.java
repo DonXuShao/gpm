@@ -11,8 +11,10 @@ import javax.persistence.Table;
 import java.util.List;
 
 /**
- * 测绘单位负责人
- */
+ * @Author Don
+ * @Description  测绘单位负责人
+ * @Date 2020/7/14 20:39
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @Description  解决跨域问题
  * @Date 2020/7/13 11:37 
  **/
-//@Configuration
+@Configuration
 public class CrosConfig implements WebMvcConfigurer {
 
 

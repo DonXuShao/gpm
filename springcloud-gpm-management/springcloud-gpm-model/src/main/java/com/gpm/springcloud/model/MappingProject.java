@@ -9,6 +9,11 @@ import lombok.experimental.Accessors;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
+/**
+ * @Author Don
+ * @Description  项目实体类
+ * @Date 2020/7/14 20:38
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

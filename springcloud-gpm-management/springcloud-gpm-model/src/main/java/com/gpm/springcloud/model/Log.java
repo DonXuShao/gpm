@@ -8,6 +8,11 @@ import lombok.experimental.Accessors;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @Author Don
+ * @Description  日志实体
+ * @Date 2020/7/14 20:38
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -9,10 +9,10 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * @Author guohang
- * @Description 部门实体
- * @Date 2020/5/20 21:36
- */
+ * @Author Don
+ * @Description  部门实体
+ * @Date 2020/7/14 20:38
+ **/
 @Table(name = "t_dept")
 @AllArgsConstructor
 @NoArgsConstructor

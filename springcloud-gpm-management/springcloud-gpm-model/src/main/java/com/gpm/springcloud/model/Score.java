@@ -8,8 +8,12 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.Column;
 import javax.persistence.Table;
-import java.util.Date;
 
+/**
+ * @Author Don
+ * @Description  分值实体
+ * @Date 2020/7/14 20:39
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

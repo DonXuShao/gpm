@@ -10,10 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * @Author guohang
- * @Description 项目成果汇交实体
- * @Date 2020-5-22 16:49:57
- */
+ * @Author Don
+ * @Description  项目成果汇交实体
+ * @Date 2020/7/14 20:39
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
