@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5eb803f-5c09-4a58-abad-d15e8982fd1c" name="Default Changelist" comment="2020年7月14日 &#10;1.实现单位信息的查询" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="DonXuShao &lt;xushaodongvip@163.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\LocalMavenFactory" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-1.8" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eP07kgnJXAbmNW8dnO6n9LOeQE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="MyBatisLogPluginindexNum" value="51" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-gpm-management/springcloud-gpm-mapper/src/main/resources/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15173945" />
+    <property name="project.structure.side.proportion" value="0.3437788" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-config\src\main\resources\properties" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gpm.springcloud.utils" />
+      <recent name="com.gpm.springcloud.base" />
+      <recent name="com.gpm.springcloud.status" />
+      <recent name="com.gpm.springcloud.fallback" />
+      <recent name="com.gpm.springcloud" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-management\springcloud-gpm-mapper\src\main\resources\mapper" />
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-management\springcloud-gpm-model\src\main\java\com\gpm\springcloud\model" />
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-management\springcloud-gpm-model\src\main\java\com\gpm\springcloud" />
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-consumer-management\springcloud-gpm-consumer8081\src\main\resources" />
+      <recent name="D:\GithubCode\gpm\springcloud-gpm-provider-management\springcloud-gpm-provider01\src\main\resources\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Compound.Consumer">
+    <configuration name="AddressUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gpm.springcloud.utils.AddressUtils" />
+      <module name="springcloud-gpm-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Config" type="CompoundRunConfigurationType">
+      <toRun name="ApplicationConfig8094" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Consumer" type="CompoundRunConfigurationType">
+      <toRun name="ApplicationConsumer8081" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Eureka" type="CompoundRunConfigurationType">
+      <toRun name="ApplicationEureka7001" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ApplicationEureka7003" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ApplicationEureka7002" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Provider" type="CompoundRunConfigurationType">
+      <toRun name="ApplicationProvider8091" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="ApplicationConsumer8081" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ApplicationConfig8094" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-gpm-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationConfig8094" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationConsumer8081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-gpm-consumer8081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationConsumer8081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationEureka7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-gpm-eureka01-7001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationEureka7001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationEureka7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-gpm-eureka02-7002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationEureka7002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationEureka7003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-gpm-eureka03-7003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationEureka7003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationProvider8091" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-gpm-provider01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gpm.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpm.springcloud.ApplicationProvider8091" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Compound.Config" />
+      <item itemvalue="Compound.Provider" />
+      <item itemvalue="Compound.Consumer" />
+      <item itemvalue="Compound.Eureka" />
+      <item itemvalue="Spring Boot.ApplicationEureka7001" />
+      <item itemvalue="Spring Boot.ApplicationEureka7002" />
+      <item itemvalue="Spring Boot.ApplicationEureka7003" />
+      <item itemvalue="Spring Boot.ApplicationConfig8094" />
+      <item itemvalue="Spring Boot.ApplicationProvider8091" />
+      <item itemvalue="Spring Boot.ApplicationConsumer8081" />
+      <item itemvalue="Application.AddressUtils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationConsumer8081" />
+        <item itemvalue="Application.AddressUtils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5eb803f-5c09-4a58-abad-d15e8982fd1c" name="Default Changelist" comment="" />
+      <created>1594207755230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594207755230</updated>
+      <workItem from="1594207759981" duration="7370000" />
+      <workItem from="1594281456490" duration="8971000" />
+      <workItem from="1594296813568" duration="1729000" />
+      <workItem from="1594340464317" duration="13033000" />
+      <workItem from="1594603272359" duration="19980000" />
+      <workItem from="1594686730579" duration="23462000" />
+      <workItem from="1594724870214" duration="12097000" />
+      <workItem from="1594772176399" duration="16602000" />
+    </task>
+    <task id="LOCAL-00001" summary="2020年7月8日 添加consumer8081">
+      <created>1594208018281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594208018281</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2020年7月9日 19:14:25 完善BaseController、CommonController">
+      <created>1594293346296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594293346296</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2020年7月10日 18:45:44 &#10;Ftp配置、Redis配置以及相关工具类&#10;维护了两个Controller">
+      <created>1594378009215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594378009215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2020年7月14日 &#10;1.实现单位信息的查询&#10;2.实现单位分值的查询&#10;3.更新了实体类部分">
+      <created>1594726798932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594726798932</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2020年7月15日&#10;           1.实现负责人信息列表加载 以及详细信息查看&#10;           2.实现技术人员信息列表加载以及详细信息查看&#10;           3.审核记录信息列表加载&#10;           4.仪器设备信息列表与详细信息加载&#10;           5.特殊岗位人员信息列表与详细信息加载&#10;           6.单位联合资源列表查询&#10;           7.初步完善测绘管理API与Consumer">
+      <created>1594796893943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594796893943</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2020年7月15日 16:18:34&#10;1.解决了Consumer环境问题">
+      <created>1594801146940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594801146940</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020年7月8日 添加consumer8081" />
+    <MESSAGE value="2020年7月8日 Eureka配置完毕" />
+    <MESSAGE value="2020年7月9日 19:14:25 完善BaseController、CommonController" />
+    <MESSAGE value="2020年7月10日 18:45:44 &#10;Ftp配置、Redis配置以及相关工具类&#10;维护了两个Controller" />
+    <MESSAGE value="2020年7月14日 &#10;1.实现单位信息的查询&#10;2.实现单位分值的查询&#10;3.更新了实体类部分" />
+    <MESSAGE value="2020年7月15日&#10;           1.实现负责人信息列表加载 以及详细信息查看&#10;           2.实现技术人员信息列表加载以及详细信息查看&#10;           3.审核记录信息列表加载&#10;           4.仪器设备信息列表与详细信息加载&#10;           5.特殊岗位人员信息列表与详细信息加载&#10;           6.单位联合资源列表查询&#10;           7.初步完善测绘管理API与Consumer" />
+    <MESSAGE value="2020年7月15日 16:18:34&#10;1.解决了Consumer环境问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020年7月15日 16:18:34&#10;1.解决了Consumer环境问题" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1594610519881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594610519881" />
+    <state x="659" y="305" width="718" height="294" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1594804286076">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="305" width="718" height="294" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594804286076" />
+    <state x="414" y="166" width="1103" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594772637309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="166" width="1103" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594772637309" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1594726159174">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594726159174" />
+    <state x="459" y="349" width="1002" height="355" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594726329537">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="459" y="349" width="1002" height="355" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1594726329537" />
+    <state x="627" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594645978218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594645978218" />
+    <state x="373" y="79" width="1270" height="850" key="CommitChangelistDialog2" timestamp="1594821864735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="373" y="79" width="1270" height="850" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594821864735" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1594208057847">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594208057846" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1594796024707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594796024707" />
+    <state width="1863" height="553" key="GridCell.Tab.0.bottom" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.0.center" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.0.left" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.0.right" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.1.bottom" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.1.center" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.1.left" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="553" key="GridCell.Tab.1.right" timestamp="1594821772828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="553" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594821772828" />
+    <state width="1863" height="326" key="GridCell.Tab.2.bottom" timestamp="1594799576449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="326" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594799576449" />
+    <state width="1863" height="326" key="GridCell.Tab.2.center" timestamp="1594799576449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="326" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594799576449" />
+    <state width="1863" height="326" key="GridCell.Tab.2.left" timestamp="1594799576449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="326" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594799576449" />
+    <state width="1863" height="326" key="GridCell.Tab.2.right" timestamp="1594799576449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="326" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594799576449" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1594646450893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594646450893" />
+    <state x="111" y="0" key="SettingsEditor" timestamp="1594810934602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="111" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594810934602" />
+    <state x="806" y="437" key="VCS.ChangelistChooser" timestamp="1594208087366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="437" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594208087366" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1594812300293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594812300293" />
+    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594645722847">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594645722847" />
+    <state x="627" y="230" key="extract.method.dialog" timestamp="1594709064660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="230" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594709064660" />
+    <state x="574" y="17" width="975" height="1023" key="find.popup" timestamp="1594726561998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="574" y="17" width="975" height="1023" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594726561998" />
+    <state x="334" y="214" key="new project wizard" timestamp="1594215255086">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594215255086" />
+    <state x="402" y="200" width="921" height="530" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1594293950616">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="402" y="200" width="921" height="530" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594293950616" />
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1594640706796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594640706796" />
+  </component>
+</project>
