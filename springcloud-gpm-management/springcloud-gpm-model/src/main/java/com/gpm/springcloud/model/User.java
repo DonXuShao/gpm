@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.Column;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @Author Don
@@ -19,7 +20,7 @@ import javax.persistence.Table;
 @Accessors(chain = true)
 @Data
 @Table(name = "t_user")
-public class User extends BaseModel {
+public class User extends BaseModel implements Serializable {
     /**
      * 用户名
      */

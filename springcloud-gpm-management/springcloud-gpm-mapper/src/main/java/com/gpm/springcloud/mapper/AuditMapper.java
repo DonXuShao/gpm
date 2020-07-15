@@ -2,7 +2,6 @@ package com.gpm.springcloud.mapper;
 
 import com.gpm.springcloud.model.Audit;
 import com.gpm.springcloud.model.MappingUnit;
-import com.gpm.springcloud.model.Technicist;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
